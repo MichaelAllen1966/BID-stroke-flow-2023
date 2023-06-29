@@ -11,3 +11,6 @@ Methods to include:
 * Explainable Machine learning
 * Qual research
 * Network-X analysis (actual flow vs planned flow)
+
+Add in £5K for data request to finance if not there.
+Add in £1K for app server (Google Cloud)
