@@ -1,39 +1,61 @@
-\section*{Summary}
+%\section*{Summary}
 
-\subsection*{Process flow in scope}
 
-The work will focus on out-of-hospital stroke patients who call for an ambulance, the system in scope is shown in figure \ref{fig:flow}.
+\vspace{5mm}
+\hrule
+\textit{`Much of the variation in healthcare is accounted for by the willingness and ability of doctors to offer treatment rather than differences in illness or patient preference'} John Wennberg, the pioneer of research into clinical variation and founder of the Dartmouth Atlas of Health Care.
+\vspace{2mm}
+\hrule
+
+\subsection*{What is the problem?}
+
+Stroke remains one of the leading causes of death and disability, globally and in the UK. The majority of strokes are caused by a clot. Clots may be reduced or removed with \textit{reperfusion} treatments if given soon enough after a stroke. These treatments include \textit{thrombolysis}, a clot-busting medication given by injection/infusion \cite{emberson_effect_2014} and, more recently, \textit{thrombectomy}, mechanical removal of a clot performed in a specialist centre \cite{fransen_time_2016}.
+
+Despite thrombolysis being long-established and of proven benefit in ischaemic stroke, use of thrombolysis varies significantly both between and within European countries \cite{aguiar_de_sousa_access_2019}. In England and Wales the national stroke audit reported that in 2021/22, thrombolysis rates for emergency stroke admissions varied from just 1\% to 28\% between hospitals \cite{sentinel_national_stroke_audit_programme_ssnap_2022}, with a median rate of 10.4\% and an inter-quartile range of 8\%-13\%, against a 2019 NHS England long term plan that 20\% of patients of emergency stroke admissions should be receiving thrombolysis. Additionally, in 2022/23, only 3.2\% of patients received thrombectomy, significantly below the expected eligibility of at least 10\% stroke patients \cite{mcmeekin_updating_2021}. 
+
+In addition to variation in outcomes due to variation in treatment of patients, there is potential that this variation leads to variation in required NHS resources, as worsened outcomes due to poorer use of thrombolysis or thrombectomy can increase downstream healthcare needs.
+
+Figure \ref{fig:flow} shows a summary of the stroke pathway that we model.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{./images/pathway}
-\caption{Summary of patient flow through the emergency and in-patient rehabilitation stroke pathway.}
+\caption{Summary of patient flow through the emergency and in-patient rehabilitation stroke pathway. Abbreviations used are: LVO = Large Vessel Occlusions (a blockage of a large artery that may be suitable for thrombectomy); IVT = Intravenous Thrombolysis; MT = Mechanical thrombectomy; CT-A = CT-Angiogram (brain scan to confirm the type and location of the stroke).}
 \label{fig:flow}
 \end{figure}
 
-\subsection*{Background}
+Our research team uses various modelling techniques, including \textit{explainable machine learning} to identify the variation that occurs across different hospitals during the first few hours of stroke care. We use these models to understand the the source and impact of that variation on patients \cite{allen_using_2022, allen_use_2022}, identifying the variation that comes from hospitals and processes, rather than variation in local patient populations. We are working with the Sentinel Stroke National Audit Programme and NHS-England on reducing between hospital-variation in emergency stroke care. In this project we will build on previous and existing work, bringing it together into a single analysis framework, and extending work to cover looking at variation in inpatient lengths of stay, and an explainable machine learning analysis in variation in selection of patients for thrombectomy.
 
-The focus of our work is on using explainable machine learning and clinical pathway simulation, applied to national clinical audit data to identify between-hospital variation in clinical decision-making, and understanding the impact of that variation on patients and the health service. Our work is in collaboration with the Sentinel National Stroke Audit Programme and national and regional NHS bodies, which gives us a strong route into application of our modelling. We have focused mostly on the emergency stroke pathway, and variation in use of clot-busting drugs (the primary treatment of emergency stroke admissions).
+\subsection*{Relevant prior and current work}
 
-In the proposed project we will bring multiple NIHR stroke-care project strands together in a single framework, and progress the modelling to include acute and rehabilitation in-patient care. We will investigate how variation in use of thrombolysis and thrombectomy will affect in-patient lengths of stay, and also investigate how in-patient lengths of stay vary between hospitals and regions, and how much of that variation is explained by differences in hospitals rather than differences in local stroke patient populations. As a result we will be able to evaluate how variation in clinical decision-making and processes effect both patient outcomes and bed requirements for in-patient stroke care. Additionally, we will include causal inference analysis that the team is developing. This will allow planners to see how an optimal system may behave in their area (e.g. at the level of integrated stroke delivery teams, or integrated care systems), and they may benchmark their performance against others, allowing for their own local patient population characteristics. Analysis and modelling will be made available through a web application.
+\begin{itemize}
+    \item \textbf{Geographical analysis} - analysis of variation in access to thrombolysis and thrombectomy \cite{allen_maximising_2019}
 
-The project will be a multi-methods study including machine learning, clinical pathway simulation, causal inference analysis, geographic modelling, and qualitative research. The team has the necessary skills and experience, with a well-established track-record, to undertake this work.
+    \item \textbf{Thrombolysis pathway and variation in patient selection} - analysis of between-hospital variation in the thrombolysis pathway using clinical pathway simulation and explainable machine learning \cite{allen_use_2022, pearn_what_2023}. Current work, as part of the NIHR SAMueL-2 project \footnote{\url{https://fundingawards.nihr.ac.uk/award/NIHR134326}} is focussing on an analysis of how between-hospital variation in selection of patients for thrombolysis effects patient outcomes. This work has produced a web tool \footnote{\url{https://stroke-predictions.streamlit.app/}}, including a health economics model, that is going in to use with the national stroke audit and NHS-England to help facilitate improvement in thrombolysis use, by working with lower thrombolysing units.
 
-Figure \ref{fig:methods} shows a summary of the methods that will be integrated.
+    \item \textbf{Pre-hospital pathway} - As part of the NIHR OptImIST programme \footnote{\url{https://fundingawards.nihr.ac.uk/award/NIHR202361}}, we are modelling the effect of pre-hopsital selection of patients for thrombectomy, the effect this is likely to have on time to thrombolysis and thrombectomy, and their outcomes (using a mathematical outcome model based on time to treatment).
+    
+\end{itemize}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.0\textwidth]{./images/methods}
-\caption{Summary of methods to be integrated for research and analysis output}
-\label{fig:methods}
-\end{figure}
+\subsection*{Proposed work}
 
-\subsection*{Research questions}
+\begin{itemize}
+    \item \textbf{Analysis of variation in patient selection for thrombectomy} - how do thrombectomy centres vary in their selection of patients for thrombectomy, and what is the likely effect on outcomes from this variation?
 
-\begin{enumerate}
-    \item How much of the variation in inpatient length of stay comes from differences in local patient populations, and how much from differences in variation in clinical decision-making and processes?
-    \item How would optimal provision of thrombolysis and thrombectomy (including pre-hospital processes, and decision-making on selecting suitable patients) affect outcomes and required stroke inpatient resources?
-    \item Which predictors of best performance (outcomes and reduced lengths of stay) have good evidence that they are directly causal?
-    \item Qualitative questions. \textbf{Need help here!} 
-\end{enumerate}
+    \item \textbf{Analysis of how variation in use of thrombolysis and thrombectomy effects in-patient length of stay} - how do thrombolysis and thrombectomy affect length of stay in acute and rehabilitation units?
 
+    \item \textbf{Causal inference studies} - are observations from predictive models supported by causal inference studies, testing that any predictions made can be attributed to the assumed cause?
+
+    \item \textbf{Production of a combined analytical pathway and web tool} - this tool with provide a national and regional analysis of current thrombolysis and thrombectomy use and provision, and enable an analysis of what an optimal system may look like, and the effect that would have on patients and health services. The tool will be developed and refined with co-production workshops, as we work with stroke teams on local thrombolysis and thrombectomy improvement. The web tool will combine:
+    
+    \begin{enumerate}
+        \item Geographical analysis access to thrombolysis and thrombectomy. The map will identify which destination hospital would provide most likely best outcomes depending on type of stroke (of if stroke type is unknown)
+
+        \item Clinical pathway simulation (including the pre-hospital pathway) - showing how optimisation of the pathway may effect thrombolysis and thrombectomy use and speed.
+
+        \item Explainable machine-learning analysis of variation in choice of patients for thrombolysis and thrombectomy (with causal inference methodology to give further confidence in modelling).
+
+        \item A health economics model based on patient outcomes, extending patient outcome results to expected QALY (quality-adjusted life years).
+    \end{enumerate} 
+    
+\end{itemize}
