@@ -9,9 +9,9 @@
 
 \subsection*{What is the problem?}
 
-Stroke remains one of the leading causes of death and disability, globally and in the UK. The majority of strokes are caused by a clot. Clots may be reduced or removed with \textit{reperfusion} treatments if given soon enough after a stroke. These treatments include \textit{thrombolysis}, a clot-busting medication given by injection/infusion \cite{emberson_effect_2014} and, more recently, \textit{thrombectomy}, mechanical removal of a clot performed in a specialist centre \cite{fransen_time_2016}.
+Stroke remains one of the leading causes of death and disability, globally and in the UK. The majority of strokes are caused by a clot. Clots may be reduced or removed with \textit{reperfusion} treatments if given soon enough after a stroke. These treatments include thrombolysis, a clot-busting medication given by injection/infusion \cite{emberson_effect_2014} and, more recently, thrombectomy, mechanical removal of a clot performed in a specialist centre \cite{fransen_time_2016}.
 
-Despite thrombolysis being long-established and of proven benefit in ischaemic stroke, use of thrombolysis varies significantly both between and within European countries \cite{aguiar_de_sousa_access_2019}. In England and Wales the national stroke audit reported that in 2021/22, thrombolysis rates for emergency stroke admissions varied from just 1\% to 28\% between hospitals \cite{sentinel_national_stroke_audit_programme_ssnap_2022}, with a median rate of 10.4\% and an inter-quartile range of 8\%-13\%, against a 2019 NHS England long term plan that 20\% of patients of emergency stroke admissions should be receiving thrombolysis. Additionally, in 2022/23, only 3.2\% of patients received thrombectomy, significantly below the expected eligibility of at least 10\% stroke patients \cite{mcmeekin_updating_2021}. 
+Despite thrombolysis being long-established and of proven benefit in ischaemic stroke, use of thrombolysis varies significantly both between hospitals. In England and Wales the national stroke audit reported that in 2021/22, thrombolysis rates for emergency stroke admissions varied from just 1\% to 28\% between hospitals \cite{sentinel_national_stroke_audit_programme_ssnap_2022}, with a median rate of 10.4\%, against a 2019 NHS England long term plan that 20\% of patients of emergency stroke admissions should be receiving thrombolysis. Additionally, in 2022/23, 3.2\% of patients received thrombectomy, significantly below the expected eligibility of at least 10\% \cite{mcmeekin_updating_2021}. 
 
 In addition to variation in outcomes due to variation in treatment of patients, there is potential that this variation leads to variation in required NHS resources, as worsened outcomes due to poorer use of thrombolysis or thrombectomy can increase downstream healthcare needs.
 
@@ -24,7 +24,9 @@ Figure \ref{fig:flow} shows a summary of the stroke pathway that we model.
 \label{fig:flow}
 \end{figure}
 
-Our research team uses various modelling techniques, including \textit{explainable machine learning} to identify the variation that occurs across different hospitals during the first few hours of stroke care. We use these models to understand the the source and impact of that variation on patients \cite{allen_using_2022, allen_use_2022}, identifying the variation that comes from hospitals and processes, rather than variation in local patient populations. We are working with the Sentinel Stroke National Audit Programme and NHS-England on reducing between hospital-variation in emergency stroke care. In this project we will build on previous and existing work, bringing it together into a single analysis framework, and extending work to cover looking at variation in inpatient lengths of stay, and an explainable machine learning analysis in variation in selection of patients for thrombectomy.
+Our research team uses various modelling techniques, including \textit{explainable machine learning} and \textit{clinical pathway simulation} to identify the variation that occurs across different hospitals during the first few hours of stroke care. We use these models to understand the the source and impact of that variation on patients \cite{allen_using_2022, allen_use_2022}, identifying the variation that comes from hospitals and processes, rather than variation in local patient populations. We have identified that the majority of between-hospital variation in thrombolysis use comes from differences in hospital processes and decision-making, rather than from differences in local patient populations \cite{allen_using_2022, allen_use_2022}.
+
+We are working with the Sentinel Stroke National Audit Programme and NHS-England on reducing between hospital-variation in emergency stroke care. In this proposed project we will build on previous and existing work, bringing it together into a single analysis framework, and extending work to cover looking at variation in inpatient lengths of stay (and how they are effected by reperfusion treatment), and an explainable machine learning analysis in variation in selection of patients for thrombectomy.
 
 \subsection*{Relevant prior and current work}
 
@@ -38,6 +40,8 @@ Our research team uses various modelling techniques, including \textit{explainab
 \end{itemize}
 
 \subsection*{Proposed work}
+
+We wish to extend our current work in the following ways:
 
 \begin{itemize}
     \item \textbf{Analysis of variation in patient selection for thrombectomy} - how do thrombectomy centres vary in their selection of patients for thrombectomy, and what is the likely effect on outcomes from this variation?
@@ -57,5 +61,7 @@ Our research team uses various modelling techniques, including \textit{explainab
 
         \item A health economics model based on patient outcomes, extending patient outcome results to expected QALY (quality-adjusted life years).
     \end{enumerate} 
+    
+\end{itemize}
     
 \end{itemize}

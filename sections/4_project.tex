@@ -1,6 +1,5 @@
 \section{Research plan}
 
-
 \vspace{2mm}
 \hrule
 \textit{`Much of the variation in healthcare is accounted for by the willingness and ability of doctors to offer treatment rather than differences in illness or patient preference'} John Wennberg, the pioneer of research into clinical variation and founder of the Dartmouth Atlas of Health Care.
@@ -9,28 +8,20 @@
 
 \subsection{What is the problem?}
 
-
 Stroke remains one of the leading causes of death and disability, globally and in the UK. The majority of strokes are caused by a clot. Clots may be reduced or removed with \textit{reperfusion} treatments if given soon enough after a stroke. These treatments include thrombolysis, a clot-busting medication given by injection/infusion \cite{emberson_effect_2014} and, more recently, thrombectomy, mechanical removal of a clot performed in a specialist centre \cite{fransen_time_2016}.
 
-Despite thrombolysis being long-established and of proven benefit in ischaemic stroke, use of thrombolysis varies significantly both between and within European countries \cite{aguiar_de_sousa_access_2019}. In England and Wales the national stroke audit reported that in 2021/22, 20 years on from the original European Medicines Agency licensing of alteplase for acute ischaemic stroke, thrombolysis rates for emergency stroke admissions varied from just 1\% to 28\% between hospitals \cite{sentinel_national_stroke_audit_programme_ssnap_2022}, with a median rate of 10.4\% and an inter-quartile range of 8\%-13\%, against a 2019 NHS England long term plan that 20\% of patients of emergency stroke admissions should be receiving thrombolysis. Additionally, in 2022/23, 3.2\% of patients received thrombectomy, significantly below the expected eligibility of at least 10\% \cite{mcmeekin_updating_2021}. At least some of this variation will be sue to variation in use of thrombolysis, as thrombolysis frequently precedes thrombectomy. Access to thrombectomy depends on geography, with about 60\% of patients requiring a secondary transfer to a thrombectomy-capable unit after receiving thrombolysis at their local acute stroke unit. This effect may be mitigated either by selection of patients for thrombectomy as part of the pre-hospital pathway, or by efficient transfer processes.
+Despite thrombolysis being long-established and of proven benefit in ischaemic stroke, use of thrombolysis varies significantly both between hospitals. In England and Wales the national stroke audit reported that in 2021/22, thrombolysis rates for emergency stroke admissions varied from just 1\% to 28\% between hospitals \cite{sentinel_national_stroke_audit_programme_ssnap_2022}, with a median rate of 10.4\%, against a NHS England long term plan that 20\% of patients of emergency stroke admissions should be receiving thrombolysis. Additionally, in 2022/23, 3.2\% of patients received thrombectomy, significantly below the expected eligibility of at least 10\% \cite{mcmeekin_updating_2021}. 
 
 In addition to variation in outcomes due to variation in treatment of patients, there is potential that this variation leads to variation in required NHS resources, as worsened outcomes due to poorer use of thrombolysis or thrombectomy may increase downstream healthcare needs.
 
-Figure \ref{fig:flow} shows a summary of the stroke pathway. 
+Our research team uses various modelling techniques, including \textit{explainable machine learning} and \textit{clinical pathway simulation} to identify the variation that occurs across different hospitals during the first few hours of stroke care. We use these models to understand the the source and impact of that variation on patients \cite{allen_using_2022, allen_use_2022}, identifying the variation that comes from hospitals and processes, rather than variation in local patient populations. We have identified that the majority of between-hospital variation in thrombolysis use comes from differences in hospital processes and decision-making, rather than from differences in local patient populations \cite{allen_using_2022, allen_use_2022}.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.0\textwidth]{./images/pathway}
-\caption{Summary of patient flow through the emergency and in-patient rehabilitation stroke pathway. Abbreviations used are: LVO = Large Vessel Occlusions (a blockage of a large artery that may be suitable for thrombectomy); IVT = Intravenous Thrombolysis; MT = Mechanical thrombectomy; CT-A = CT-Angiogram (brain scan to confirm the type and location of the stroke).}
-\label{fig:flow}
-\end{figure}
-
-Our research team uses various modelling techniques, including \textit{explainable machine learning} to identify the variation that occurs across different hospitals during the first few hours of stroke care. We use these models to understand the the source and impact of that variation on patients \cite{allen_using_2022, allen_use_2022}, identifying the variation that comes from hospitals and processes, rather than variation in local patient populations. We are working with the Sentinel Stroke National Audit Programme and NHS-England on reducing between hospital-variation in emergency stroke care. In this project we will build on previous and existing work, bringing it together into a single analysis framework, and extending work to cover looking at variation in inpatient lengths of stay, and an explainable machine learning analysis in variation in selection of patients for thrombectomy.
+We are working with the Sentinel Stroke National Audit Programme and NHS-England on reducing between hospital-variation in emergency stroke care. In this proposed project we will build on previous and existing work, bringing it together into a single analysis framework and web application, and extending work to cover looking at variation in inpatient lengths of stay (and how they are effected by reperfusion treatment), and an explainable machine learning analysis in variation in selection of patients for thrombectomy.
 
 \subsubsection{Relevant prior and current work}
 
 \begin{itemize}
-    \item \textbf{Geographical analysis} - analysis of variation in access to thrombolysis and thrombectomy \cite{allen_maximising_2019}
+    \item \textbf{Geographical analysis} - analysis of variation in access to thrombolysis and thrombectomy \cite{allen_maximising_2019}.
 
     \item \textbf{Thrombolysis pathway and variation in patient selection} - analysis of between-hospital variation in the thrombolysis pathway using clinical pathway simulation and explainable machine learning \cite{allen_use_2022, pearn_what_2023}. Current work, as part of the NIHR SAMueL-2 project \footnote{\url{https://fundingawards.nihr.ac.uk/award/NIHR134326}} is focussing on an analysis of how between-hospital variation in selection of patients for thrombolysis effects patient outcomes. This work has produced a web tool \footnote{\url{https://stroke-predictions.streamlit.app/}}, including a health economics model, that is going in to use with the national stroke audit and NHS-England to help facilitate improvement in thrombolysis use, by working with lower thrombolysing units.
 
@@ -43,11 +34,11 @@ Our research team uses various modelling techniques, including \textit{explainab
 See \textit{research questions and aims} below for more details. 
 
 \begin{itemize}
-    \item Analysis of variation in patient selection for thrombectomy
+    \item Analysis of variation in patient selection for thrombectomy (and resulting patient outcomes).
 
     \item Analysis of how variation in use of thrombolysis and thrombectomy effects in-patient length of stay
 
-    \item Causal inference studies
+    \item Causal inference studies on the links between treatment and outcome
 
     \item Production of a combined analytical pathway and web tool
     
@@ -55,28 +46,28 @@ See \textit{research questions and aims} below for more details.
 
 \subsection{Why is this work important?}
 
-Reperfusion treatment is the only emergency treatment for stroke proven to reduce disability. Unwanted variation in reperfusion treatment leads to avoidable variation in disability outcomes in stroke, which also has potential to cause unnecessary variation in downstream healthcare resource use. These methods are also potentially valuable in other healthcare settings where it is suspected that variation in healthcare and outcomes is due to variation in treatment processes and decisions rather than in differences in local patient populations.
+Reperfusion treatment is the mainstay emergency treatment for stroke. Unwanted variation in reperfusion treatment leads to avoidable variation in disability outcomes in stroke, which also has potential to cause unnecessary variation in downstream healthcare resource use. These methods are also potentially valuable in other healthcare settings where it is suspected that variation in healthcare and outcomes is due to variation in treatment processes and decisions rather than in differences in local patient populations.
 
 \subsection{Review of existing evidence}
 
-Studies have shown that reasons for low and varying thrombolysis rates are multi-factorial. Reasons include late presentation \cite{aguiar_de_sousa_access_2019}, lack of expertise \cite{aguiar_de_sousa_access_2019} or lack of clear protocols or training \cite{carter-jones_stroke_2011}, delayed access to specialists \cite{kamal_delays_2017}, and poor triage by ambulance or emergency department staff \cite{carter-jones_stroke_2011}. For many factors, the establishment of primary stroke centres has been suggested to improve the emergency care of patients with stroke and reduce barriers to thrombolysis \cite{carter-jones_stroke_2011}, with a centralised model of primary stroke centres leading to increased likelihood of thrombolysis \cite{lahr_proportion_2012, morris_impact_2014, hunter_impact_2013}. 
+Studies have shown that reasons for low and varying thrombolysis rates are multi-factorial. Reasons may often be organisational \cite{aguiar_de_sousa_access_2019, kamal_delays_2017, carter-jones_stroke_2011}. For many organisational factors, the establishment of primary stroke centres has been suggested to improve the emergency care of patients with stroke and reduce barriers to thrombolysis \cite{carter-jones_stroke_2011},  with a centralised model of primary stroke centres leading to increased likelihood of thrombolysis \cite{lahr_proportion_2012, morris_impact_2014, hunter_impact_2013}. 
 
-In addition to organisational factors, clinicians can have varying attitudes to which patients are suitable candidates for thrombolysis. In a discrete choice experiment \cite{de_brun_factors_2018}, 138 clinicians considered hypothetical patient vignettes, and responded as to whether they would give the patients thrombolysis. The authors concluded that there was considerable heterogeneity among respondents in their thrombolysis decision-making. Areas of difference were around whether to give thrombolysis to mild strokes, to older patients beyond 3 hours from stroke onset, and when there was pre-existing disability.
+In addition to organisational factors, clinicians can have varying attitudes on which patients are suitable candidates for thrombolysis. In a discrete choice experiment \cite{de_brun_factors_2018}, 138 clinicians considered hypothetical patient vignettes, and responded as to whether they would give the patients thrombolysis. The authors concluded that there was considerable heterogeneity among respondents in their thrombolysis decision-making. 
 
-Based on national audit data from three years of emergency stroke admissions, we have previously built models of the emergency stroke pathway using clinical pathway simulation to examine the potential scale of the effect of changing two aspects of the stroke pathway performance (1. the in-hospital process speeds, and 2. the proportion of patients with a determined stroke onset time), and using machine learning to examine the effect of replicating clinical decision-making around thrombolysis from higher thrombolysing hospitals to lower thrombolysing hospitals \cite{allen_using_2022, allen_use_2022}. The machine learning model, which has 85\% accuracy (ROC-AUC = 0.92), learned whether any particular patient would receive thrombolysis in any particular emergency stroke centre. Using these models we found that it would be credible to target an increase in average thrombolysis in England and Wales, from 11\% to 18\%, but that each hospital should have its own target, reflecting differences in local populations. We found that the largest increase in thrombolysis use would come from replicating thrombolysis decision-making practice from higher to lower thrombolysing hospitals. Two other important factors influencing thrombolysis rates were determination of stroke onset time in some hospitals, and improving the speed of the in-hospital thrombolysis pathway.
+Based on national audit data we have previously built models of the emergency stroke pathway using clinical pathway simulation to examine the potential scale of the effect of changing two aspects of the stroke pathway performance (1. the in-hospital process speeds, and 2. the proportion of patients with a determined stroke onset time), and using machine learning to examine the effect of replicating clinical decision-making around thrombolysis from higher thrombolysing hospitals to lower thrombolysing hospitals \cite{allen_using_2022, allen_use_2022}. Using these models we found that it would be credible to target an increase in average thrombolysis in England and Wales, from 11\% to 18\%, but that each hospital should have its own target, reflecting differences in local populations. We found that the largest increase in thrombolysis use would come from replicating thrombolysis decision-making practice from higher to lower thrombolysing hospitals. Two other important factors influencing thrombolysis rates were determination of stroke onset time in some hospitals, and improving the speed of the in-hospital thrombolysis pathway.
 
 We have extended the model to including explainability \cite{pearn_what_2023}. This revealed that lower thrombolysing hospitals, compared with higher thrombolysing hospitals, were particularly less likely to give thrombolysis to patients with 1) mild stroke, 2) imprecisely known onset time, 3) patient with prior disability, 4) any combination of those. This work is now forming the basis of a web tool \footnote{\url{https://stroke-predictions.streamlit.app/}} that allows stroke teams to compare their thrombolysis decisions to others, and to see how changing the pathway process can change the use and speed of thrombolysis, and the effect on patient outcomes.
 
-We now wish to extend this work to include use of thrombectomy (including looking at any regional variation in patient selection), and the pre-hospital pathway. The latter also builds on our previous work looking at how to maximise access to thrombolysis and thrombectomy \cite{allen_maximising_2019}. Additionally we will use strengthen causal inference methodologies to test assumptions on how changing the pathway and patient selection will change patient outcomes.
-
 \subsection{Research questions and aims}
+
+We wish to extend our current work in the following ways:
 
 \begin{itemize}
     \item \textbf{Analysis of variation in patient selection for thrombectomy} - how do thrombectomy centres vary in their selection of patients for thrombectomy, and what is the likely effect on outcomes from this variation?
 
     \item \textbf{Analysis of how variation in use of thrombolysis and thrombectomy effects in-patient length of stay} - how do thrombolysis and thrombectomy affect length of stay in acute and rehabilitation units?
 
-    \item \textbf{Causal inference studies} - are observations from predictive models supported by causal inference studies, testing that any predictions made can be attributed to the assumed cause?
+    \item \textbf{Causal inference studies} - are observations from predictive models supported by causal inference studies, testing that any predictions made can be attributed to the assumed cause.
 
     \item \textbf{Production of a combined analytical pathway and web tool} - this tool with provide a national and regional analysis of current thrombolysis and thrombectomy use and provision, and enable an analysis of what an optimal system may look like, and the effect that would have on patients and health services. The tool will be developed and refined with co-production workshops, as we work with stroke teams on local thrombolysis and thrombectomy improvement. The web tool will combine:
     
@@ -105,15 +96,31 @@ The methods used in this study have been used extensively by the team before, ex
 The major components of the project, with methods are as follows:
 
 \begin{itemize}
+
     \item \textbf{Clinical Pathway Simulation}: We use Clinical Pathway Simulation to model the flow of individual patients through the stroke pathway, with each patient having their own times drawn from distributions (created from observed data), and patient characteristics (e.g. age, stroke severity). Outcome is predicted based on time to treatment for thrombolysis and/or thrombectomy (or based on no treatment given). This model may be used to estimate the effects of changing process speed and efficiency, percentage of patients with ascertained stroke onset time, the likelihood any patient will receive thrombolysis at any hospital, and the choice of which type of hospital to which the patient is conveyed. These models may either be coded in \textit{NumPy} for national scale models, or \textit{SimPy} for regional models where more control is desired over patient flow. We are experienced in both of these methods \cite{allen_use_2022, allen_simulation_2020}
 
-    \item \textbf{Explainable Machine Learning}: We use machine learning to learn and predict the treatment decisions at different hospitals. This allows us to learn general patterns of what makes patients suitable for thrombolysis in practice, and allows us to observe how any individual hospital differs from that norm. It also allows us to provide a \textit{benchmark decision} for each patient based upon the majority vote of predicted thrombolysis decisions from a selected group of hospitals. Machine learning is also used to predict disability at discharge.
-    
-    xxxxxxxxxxxxxxxxxxxxxxx
-    
+    \item \textbf{Explainable Machine Learning}: We will use machine learning in a range of activities:
+
+    \begin{itemize}
+        \item \textit{Learning and and prediction of treatment decisions at different hospitals}. This allows us to learn general patterns of what makes patients suitable for thrombolysis in practice, and allows us to observe how any individual hospital differs from that norm. It also allows us to provide a \textit{benchmark decision} for each patient based upon the majority vote of predicted thrombolysis decisions from a selected group of hospitals. 
+
+        \item \textit{Learning and and prediction of outcomes with and without treatment}. Learning outcomes from observational data extends our mathematical models based on clinical trial results, and allows more complex learning than available from clinical trials. All patients in the data set have estimated disability score prior to stroke, and disability on discharge assessed. We currently predict outcomes with and without thrombolysis, and will extend this to thrombectomy.
+
+        \item \textit{Learning and and prediction of inpatient lengths of stay and discharge destination.} We will extend out machine learning to predict inpatient lengths of stay and discharge destination based on patient details, treatment, and hospital attended. This will allow us to evaluate how thrombolysis and thrombectomy affect lengths of stay and discharge destination independent of patient characteristics, and allow us to investigate any variation in length-of-stay that are attributable to the hospital (which will also me matched to outcomes as a counter-measure of length of stay).
+        
+    \end{itemize}
+
     We have tested a range of machine learning models (from logistic regression through to modular neural networks) \cite{allen_using_2022}, but now focus on using \textit{XGBoost}. We add an explainable machine learning model, using \textit{SHAP}, to show how patient features influence the model's predictions. This is done at both patient and population level \cite{pearn_what_2023}.  
 
-    \item \textbf{Causal Inference}: Causal inference will be used to further test whether predictions from the machine learning model are likely to be causal in nature. For example, some patterns are appearing in our current work which may help guide clinicians on use of thrombolysis. In mild stroke (which was not generally included in the clinical trials), we observe that early thrombolysis is associated with a reduced chance of death, whereas later thrombolysis is associated with an increased chance of death. It is possible, however, that this effect is co-incidental rather than causal. We will add established causal inference methods to further test these relationships. For example. \textit{`Propensity'}, the likelihood of a person receiving thrombolysis (estimated from a separate machine learning model), is added to the outcome prediction model, allowing the outcome model to be adjusted for patients' suitability for treatment. Microsoft have brought together a range of causal inference methods in two Python libraries, \textit{DoWhy} and \textit{EconML}, which we will use for this work.
+    \item \textbf{Causal Inference}: Causal inference will be used to further test whether predictions from the machine learning model are likely to be causal in nature. For example, some patterns are appearing in our current work which may help guide clinicians on use of thrombolysis. In mild stroke (which was not generally included in the clinical trials), we observe that early thrombolysis is associated with a reduced chance of death, whereas later thrombolysis is associated with an increased chance of death. It is possible, however, that this effect is co-incidental rather than causal. We will add established causal inference methods to further test these relationships. We will focus on two key methods:
+
+    \begin{itemize}
+        \item Use of \textit{`Propensity'}, the likelihood of a person receiving thrombolysis (estimated from a separate machine learning model). This may be used to stratify or weight results by suitability for treatment, or may be added to outcome models, allowing the outcome model to be adjusted for patients' suitability for treatment. Microsoft have brought together a range of causal inference methods in two Python libraries, \textit{DoWhy} and \textit{EconML}, which we will use for this work.
+
+        \item Use of \textit{Directed Acyclic Graphs} (DAGs). DAGs are simple diagrams showing proposed or assumed causal influences. They are easily understood by non-technical audiences, and so form an excellent basis for discussions and workshops to explore proposed causal relationships with clinical experts. We will use these, alongside results from other methods, in co-production workshops.
+    \end{itemize}
+
+    \item 
 
     \item \textbf{Geographic modelling}: Geographic modelling is used to estimate travel times to closest thrombolysis and thrombectomy units, as well as the travel time between the two types of units when a secondary transfer is required. This type of modelling helps planners understand the likely impact of changes to configurations of health services. We use the Linux \textit{routino} application with \textit{Open Street Map} data for estimating travel times from all Lower Super Output areas to all thrombolysis and thrombectomy units (results are calibrated against Google maps). Mapping is performed using the Python \textit{Geopandas} library.
 
@@ -122,9 +129,6 @@ The major components of the project, with methods are as follows:
     \item \textbf{Web application}: We have a pilot web application (\url{https://stroke-predictions.streamlit.app/}. We use Python-based \textit{StreamLit} which enables data scientists to readily build and maintain web applications.
     
 \end{itemize}
-
-
-
 
 
 \subsubsection{Project team}
@@ -151,20 +155,16 @@ The project teams bring together experience of stroke care, machine learning, ep
 
 \subsubsection{Patient and carer involvement}
 
-Our team has a dedicated PPI group who provide constant input into our work and have provided input to this bid. The PPI group have been a key voice in guiding our work to look at what maximises patient outcomes, and not arbitrary targets on thrombolysis use. The PPI team is chaired by Leon Farmer, a stroke supervisor, with guidance from Lauren Asare of the University of Exeter PenARC PPI team.
+Our team has a dedicated PPI group who provide constant input into our work and have provided input to this bid. The PPI group have been a key voice in guiding our work to look most at what maximises patient outcomes, and not arbitrary targets on thrombolysis use. The PPI team is chaired by Leon Farmer, a stroke supervisor, with guidance from Lauren Asare of the University of Exeter PenARC PPI team.
 
 \subsubsection{Co-production with the NHS, and link to patient benefit}
 
 During this project we will hold stakeholder workshops to obtain feedback on the work. This will use our existing stakeholder network across the SSNAP, Integrated Stroke Delivery Networks (ISDN) and Integrated Care Systems (ICS). As we are working alongside NHS-England and NHS-Elect with teams with low thrombolysis (see paragraph below), we will also use this experience to refine project outputs.
 
-A pilot web portal is being made available from autumn 2023, providing analysis of thrombolyis use at each hospital, comparing decisions made to other hospitals, and providing modelling how changing process speeds or clinical decisions would likely effect thrombolysis use and outcomes (based on a mathematical model of outcome depending on time to thrombolysis).
+A pilot web portal is being made available from autumn 2023, providing analysis of thrombolyis use at each hospital, comparing decisions made to other hospitals, and providing modelling how changing process speeds or clinical decisions would likely effect thrombolysis use and outcomes (based on a mathematical model of outcome depending on time to thrombolysis). We will seek feedback from users of the web application.
 
-The modelling work currently being performed\footnote{https://fundingawards.nihr.ac.uk/award/NIHR134326} is planned to be incorporated into the national stroke audit from Spring 2024. This will provide teams with realistic target thrombolysis use for their own patient population, and identify which area of the stroke pathway to focus on (for example pathway speed, ascertainment of stroke onset time, thrombolysis decision making). Additionally, NHS-Elect (who are working with NHS-England, the SAMueL team, and the national stroke audit) have an NHS improvement target to “Improve access to thrombolysis such that by the end of 2027/28, 20\% of stroke patients will receive thrombolysis treatment”. This collaborative will be working with 6 low-thrombolysing teams in the first instance, before extending work to all emergency stroke teams. 
+The modelling work currently being performed\footnote{https://fundingawards.nihr.ac.uk/award/NIHR134326} is planned to be incorporated into the national stroke audit from Spring 2024. This will provide teams with realistic target thrombolysis use for their own patient population, and identify which area of the stroke pathway to focus on (for example pathway speed, ascertainment of stroke onset time, thrombolysis decision making). Additionally, NHS-Elect (who are working with NHS-England, our stroke modelling team, and the national stroke audit) have an NHS improvement target to “Improve access to thrombolysis such that by the end of 2027/28, 20\% of stroke patients will receive thrombolysis treatment”. This collaborative will be working with 6 low-thrombolysing teams in the first instance, before extending work to all emergency stroke teams. 
 
 \subsubsection{Dissemination}
 
 In addition to working with the national stroke audit and stroke teams directly (see above), we will also publish our work in leading stroke journals, and present it at stroke conferences. All of our detailed work is published online (e.g. see \url{https://samuel-book.github.io/samuel_shap_paper_1}).
-
-
-
-
