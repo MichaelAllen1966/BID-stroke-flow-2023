@@ -1,4 +1,4 @@
-This research aims to reduce life-altering disparities in emergency stroke care by identifying and addressing hospital-level variations in the use of proven clot-removing treatments. By using advanced modelling and 'artificial intelligence' techniques, we uncover not just the 'what' but the 'why' and the 'impact' of inconsistent care, paving the way for targeted interventions to improve patient outcomes and streamline healthcare resources.
+This research aims to reduce life-altering disparities in emergency stroke care by identifying and addressing hospital-level variations in the use of proven clot-removing treatments. By applying advanced modelling and 'artificial intelligence' techniques, we uncover not just the 'what?', but 'why?' and the impact of inconsistent care. This will pave the way for targeted interventions to improve patient outcomes and streamline healthcare resources.
 
 1. WHAT IS THE PROBLEM?
 
