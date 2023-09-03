@@ -1,0 +1,21 @@
+[1] Emberson, J. et al. Effect of treatment delay, age, and stroke severity on the effects of intravenous thrombolysis with alteplase for acute ischaemic stroke: A meta-analysis of individual patient data from randomised trials. The Lancet 384, 1929–1935 (2014).
+[2] Fransen, P. S. S. et al. Time to Reperfusion and Treatment Effect for Acute Ischemic Stroke: A Randomized Clinical Trial.
+JAMA Neurology 73, 190–196 (2016). URL https://jamanetwork.com/journals/jamaneurology/fullarticle/2478306.
+[3] Sentinel National Stroke Audit Programme. SSNAP Annual Results Portfolio (April 2021 to March 2022) (2022). URL https:
+//www.strokeaudit.org/Documents/National/Clinical/Apr2021Mar2022/Apr2021Mar2022-AnnualResultsPortfolio.aspx.
+[4] McMeekin, P. et al. Updating estimates of the number of UK stroke patients eligible for endovascular thrombectomy: incorporating recent evidence to facilitate service planning. European Stroke Journal 6, 349–356 (2021). URL https:
+//doi.org/10.1177/23969873211059471. Publisher: SAGE Publications.
+[5] Allen, M. et al. Using simulation and machine learning to maximise the benefit of intravenous thrombolysis in acute stroke in England and Wales: the SAMueL modelling and qualitative study. Health and Social Care Delivery Research 10, 1–148 (2022). URL  https://www.journalslibrary.nihr.ac.uk/hsdr/GVZL5699/.
+[6] Allen, M. et al. Use of Clinical Pathway Simulation and Machine Learning to Identify Key Levers for Maximizing the Benefit of Intravenous Thrombolysis in Acute Stroke. Stroke 53, 2758–2767 (2022). URL https://www.ahajournals.org/doi/10.116 1/STROKEAHA.121.038454. Publisher: American Heart Association.
+[7] Allen, M. et al. Maximising access to thrombectomy services for stroke in England: A modelling study. European Stroke Journal 4, 39–49 (2019). URL https://doi.org/10.1177/2396987318785421.
+[8] Pearn, K. et al. What would other emergency stroke teams do? Using explainable machine learning to understand variation in thrombolysis practice. European Stroke Journal 23969873231189040 (2023). URL https://doi.org/10.1177/23969873231189
+040. Publisher: SAGE Publications.
+[9] Aguiar de Sousa, D. et al. Access to and delivery of acute ischaemic stroke treatments: A survey of national scientific societies and stroke experts in 44 European countries. European Stroke Journal 4, 13–28 (2019). URL https://www.ncbi.nlm.nih.gov
+/pmc/articles/PMC6533860/.
+[10] Kamal, N. et al. Delays in Door-to-Needle Times and Their Impact on Treatment Time and Outcomes in Get with the Guidelines. Stroke 48, 946–954 (2017). Number: 4.
+[11] Carter-Jones, C. R. Stroke thrombolysis: Barriers to implementation. International Emergency Nursing 19, 53–57 (2011).
+[12] Lahr, M. M. H., Luijckx, G.-J., Vroomen, P. C. A. J., van der Zee, D.-J. & Buskens, E. Proportion of patients treated with thrombolysis in a centralized versus a decentralized acute stroke care setting. Stroke 43, 1336–1340 (2012).
+[13] Morris, S. et al. Impact of centralising acute stroke services in English metropolitan areas on mortality and length of hospital stay: difference-in-differences analysis. Bmj 349, g4757–g4757 (2014). URL http://www.bmj.com/cgi/doi/10.1136/bmj.g4757.
+[14] Hunter, R. M. et al. Impact on clinical and cost outcomes of a centralized approach to acute stroke care in London: a comparative effectiveness before and after model. PloS One 8, e70420 (2013).
+[15] De Bru´n, A. et al. Factors that influence clinicians’ decisions to offer intravenous alteplase in acute ischemic stroke patients with uncertain treatment indication: Results of a discrete choice experiment. International Journal of Stroke 13, 74–82 (2018). URL https://doi.org/10.1177/1747493017690755. Publisher: SAGE Publications.
+[16] Allen, M. et al. A simulation modelling toolkit for organising outpatient dialysis services during the COVID-19 pandemic. PLOS ONE 15, e0237628 (2020). URL https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0237628. Publisher: Public Library of Science.

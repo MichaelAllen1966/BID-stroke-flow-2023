@@ -1,0 +1,31 @@
+AIM
+
+This research aims to reduce life-altering disparities in emergency stroke care by identifying and addressing hospital-level variations in the use of proven clot-removing treatments. By using advanced modelling and 'artificial intelligence' techniques, we uncover not just the 'what', but the 'why' and the 'impact' of inconsistent care, paving the way for targeted interventions to improve patient outcomes and streamline healthcare resources.
+
+BACKGROUND
+
+Our team performs a range of advanced methods to understand variation in emergency stroke care, and the effect that has on patient outcomes. We map access to different types of care depending on where people live, and provide suggestions on how more people can have emergency care closer to home. We have models that mimic the flow of patients through each hospital, and can identify for each hospital how improving that flow could improve patient outcomes. Using 'explainable machine learning' we also learn the decisions each hospital make on who they give clot-busting drugs to (to remove the blockage causing a stroke). we also learn how the differences in use of clot-busting drugs affect patient outcomes.
+
+PLANNED WORK
+
+We wish to build on our current work, and extend it in several important ways:
+
+1. We will extend our work to cover mechanical removal of clots ('thrombectomy'). We will look at variation in the access to, and speed of, thrombectomy. We will compare decisions on which patients are provided with thrombectomy.
+
+2. We will update our analysis to include new stroke care guidelines. This includes extending use of clot-busting drugs to more people who wake up having had a stroke in their sleep.
+
+3. We will investigate how variation in treatment is effecting in-patient lengths of stay (which effects both the patient and the hospitals who have to provide the inpatient care).
+
+4. We will trial a version of our stroke pathway simulation model that will use more data and use always up-to-date data. This creates what is known as a "Digital Twin" of the hospital's stroke care system. Digital Twins allow problems to identified earlier, and suggest actions to improve the situation.  
+
+5. We have just launched a web site that allows stroke teams to see our analysis (https://stroke-predictions.streamlit.app/). We will continue to refine this site, and will expand it with all the new analyses.
+
+During this project we will hold stakeholder workshops to obtain feedback on the work, to ensure our work engages stroke teams.
+
+PUBLIC AND CARER INVOLVEMENT
+
+We work with a highly engaged Patient and Carer Involvement team. This team has been key in pushing the project to focus on outcomes and not just NHS targets.
+
+LINK TO PATIENT BENEFIT
+
+We have strong direct links for how our findings will benefit patients. The national stroke audit will incorporate our findings from spring 2024, providing key output from our work to all stroke teams. We are also a key member of a new project driven by NHS-England, working with stroke teams across England to improve emergency stroke care.
