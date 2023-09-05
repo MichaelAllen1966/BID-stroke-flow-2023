@@ -16,7 +16,7 @@ We wish to build on our current work in several important ways:
 
 3. We will investigate how variation in treatment is affecting in-patient lengths of stay (which affects both the patients and the hospitals who provide the inpatient care).
 
-4. We will trial a version of our stroke pathway simulation model that will use more data and use always up-to-date data. This creates what is known as a "Digital Twin" of the hospital's stroke care system. Digital Twins allow problems to identified earlier, and suggest actions to improve the situation.  
+4. We will trial a version of our stroke pathway simulation model that will use more data and use always up-to-date data from one hospital. This creates what is known as a "Digital Twin" of the hospital's stroke care system. Digital Twins allow problems to identified earlier, and suggest actions to improve the situation. For example, when Apollo 13 suffered a fire, 210 thousand miles away from Earth, engineers in NASA experimented with a computer simulation of the Apollo spacecraft, which was kept up to date with the conditions aboard the crippled capsule. This allowed the engineers to experiment with a simulation that closely copied the state and behaviour of the actual spacecraft, to find a way to bring the astronauts safely home. This was the first significant example and use of a "Digital Twin".
 
 5. We have just launched a web site that allows stroke teams to see our analysis (https://stroke-predictions.streamlit.app/). We will continue to refine this site, and will expand it with all the new analyses.
 
