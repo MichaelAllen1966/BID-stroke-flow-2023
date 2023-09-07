@@ -38,7 +38,7 @@ We wish to extend our current work in the following ways:
 
 * Analysis of how variation in use of thrombolysis and thrombectomy effects in-patient length of stay - how do thrombolysis and thrombectomy affect length of stay in acute and rehabilitation units?
 
-* Pilot work on a 'Digital Twin' stroke unit. This is an extension to our current clinical pathway simulation that will use more data, with rapid near-live model updating. 
+* Pilot work on a 'Digital Twin' stroke unit. This is an extension to our current clinical pathway simulation that will use more data, with rapid near-live model updating. Digital Twins allow problems to identified earlier, and suggest actions to improve the situation. For example, when Apollo 13 suffered a fire, 210 thousand miles away from Earth, engineers in NASA experimented with a computer simulation of the Apollo spacecraft, which was kept up to date with the conditions aboard the crippled capsule. This allowed the engineers to experiment with a simulation that closely copied the state and behaviour of the actual spacecraft, to find a way to bring the astronauts safely home. This was the first significant example and use of a "Digital Twin".
 
 * Production of a combined analytical pathway and web tool - this tool with provide a national and regional analysis of current thrombolysis and thrombectomy use and provision, and enable an analysis of what an optimal system may look like, and the effect that would have on patients and health services. The tool will be developed and refined with co-production workshops, as we work with stroke teams on local thrombolysis and thrombectomy improvement. The web tool, developed from our existing web tool (https://bit.ly/sam2_app) will combine:
 
